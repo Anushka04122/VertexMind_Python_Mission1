@@ -76,6 +76,14 @@ try:
         student.display()
 
 
+    # List Comprehension
+
+    student_names = [student.name for student in students]
+
+    print("\nStudent Names:")
+    print(student_names)
+
+
 except Exception as error:
 
     print("Error:", error)
