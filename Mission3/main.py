@@ -7,8 +7,10 @@ init(autoreset=True)
 tasks = []
 
 
-# Function to add task
 def add_task():
+    """
+    Adds a new task to the task list.
+    """
 
     task_name = input(Fore.YELLOW + "\nEnter task name: ")
 
@@ -22,8 +24,10 @@ def add_task():
     print(Fore.GREEN + "Task added successfully!")
 
 
-# Function to view tasks
 def view_tasks():
+    """
+    Displays all tasks.
+    """
 
     if len(tasks) == 0:
 
@@ -41,8 +45,10 @@ def view_tasks():
             )
 
 
-# Function to mark task as completed
 def complete_task():
+    """
+    Marks a task as completed.
+    """
 
     view_tasks()
 
@@ -65,8 +71,10 @@ def complete_task():
         print(Fore.RED + "Task number does not exist.")
 
 
-# Function to remove task
 def remove_task():
+    """
+    Removes a task from the list.
+    """
 
     view_tasks()
 
