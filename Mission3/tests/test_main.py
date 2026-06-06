@@ -1,17 +1,15 @@
-import unittest
+def test_addition():
+
+    assert 2 + 2 == 4
 
 
-class TestTaskManager(unittest.TestCase):
+def test_uppercase():
 
-    def test_addition(self):
-
-        self.assertEqual(2 + 2, 4)
-
-    def test_uppercase(self):
-
-        self.assertEqual("python".upper(), "PYTHON")
+    assert "python".upper() == "PYTHON"
 
 
-if __name__ == "__main__":
+def test_list():
 
-    unittest.main()
+    tasks = ["Study", "Code", "Submit"]
+
+    assert len(tasks) == 3
